@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import Heading from "./common/Heading"
+import Heading from "./common/Heading";
+import PeopleList from "./people/PeopleList";
 
 class App extends Component {
   render() {
     return (
       <div>
         <Heading />
-      <Switch>
-        {/* <Route exact path='/' component={HomePage} />
+        <Switch>
+          <Route exact path='/' component={PeopleList} />
+          <Route path='/people' component={PeopleList} />
+          {/* <Route exact path='/' component={HomePage} />
         {!userToken && <Route path='/signup' component={AuthPage} />}
         {!userToken && <Route path='/signin' component={LoginPage} />}
         {userToken && <Redirect from='/signin' to='/' exact />}
@@ -23,7 +26,7 @@ class App extends Component {
         <Route path='/potraits' component={CreatePotrait} />
         <Route path='/events' component={CreateEvent} />
         <Route component={PageNotFound} /> */}
-      </Switch>
+        </Switch>
       </div>
     );
   }
