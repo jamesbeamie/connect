@@ -8,7 +8,12 @@ export class Heading extends Component {
           <h3>Connect</h3>
         </div>
         <form>
-          <input type='text' placeholder='search' value='search' />
+          <input
+            type='text'
+            placeholder='search'
+            value='search'
+            onChange={() => console.log()}
+          />
         </form>
       </div>
     );
