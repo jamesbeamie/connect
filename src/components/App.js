@@ -1,10 +1,29 @@
 import React, { Component } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Heading from "./common/Heading"
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>updt</h1>
+        <Heading />
+      <Switch>
+        {/* <Route exact path='/' component={HomePage} />
+        {!userToken && <Route path='/signup' component={AuthPage} />}
+        {!userToken && <Route path='/signin' component={LoginPage} />}
+        {userToken && <Redirect from='/signin' to='/' exact />}
+        <Route path='/link-to-reset' component={ResetRequest} />
+        <Route path='/about' component={AboutPage} />
+        <Route path='/authenticate-reset' component={PwdReset} />
+        <Route path='/blog' component={CreateBlog} />
+        <Route path='/engagements' component={CreateEngagement} />
+        <Route path='/bumps' component={CreateBump} />
+        <Route path='/kids' component={CreateChild} />
+        <Route path='/family' component={CreateFamily} />
+        <Route path='/potraits' component={CreatePotrait} />
+        <Route path='/events' component={CreateEvent} />
+        <Route component={PageNotFound} /> */}
+      </Switch>
       </div>
     );
   }
