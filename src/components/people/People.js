@@ -11,7 +11,7 @@ export class People extends Component {
     console.log("$$$$$$$", this.props.listedPeople);
     return (
       <div>
-        <PeopleList />
+        <PeopleList people={this.props.listedPeople} />
       </div>
     );
   }
