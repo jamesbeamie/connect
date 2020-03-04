@@ -8,10 +8,11 @@ export class People extends Component {
     this.props.getPeopleAction();
   }
   render() {
-    console.log("$$$$$$$", this.props.listedPeople);
+    const { listedPeople } = this.props;
+    console.log("$$$$$$$", listedPeople);
     return (
       <div>
-        <PeopleList people={this.props.listedPeople} />
+        <PeopleList people={listedPeople} />
       </div>
     );
   }
