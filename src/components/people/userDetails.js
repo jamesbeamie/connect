@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import getProfileAction from "../actions/userProfileAction";
+import UserImages from "./userImages";
 import { connect } from "react-redux";
 
 export class userDetails extends Component {
@@ -47,6 +48,9 @@ export class userDetails extends Component {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div>
+                  <UserImages photos={profile.albums} name={profile.name} />
                 </div>
               </div>
             );
