@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Heading from "./common/Heading";
 import PeopleList from "./people/PeopleList";
 import People from "./people/People";
+import userDetails from "./people/userDetails";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <Route exact path='/' component={PeopleList} />
           <Route path='/peopleList' component={PeopleList} />
           <Route path='/people' component={People} />
+          <Route path='/:name' component={userDetails} />
           {/* <Route exact path='/' component={HomePage} />
         {!userToken && <Route path='/signup' component={AuthPage} />}
         {!userToken && <Route path='/signin' component={LoginPage} />}

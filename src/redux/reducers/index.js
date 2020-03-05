@@ -3,6 +3,7 @@ import { combineReducers } from "redux";
 // import signUpReducer from "./signUpReducer";
 // import signInReducer from "./signInReducer";
 import peopleReducer from "./getPeopleReducer";
+import profileReducer from "./userProfileReducer";
 // import bumpReducer from "./bumpReducer";
 // import childrenReducer from "./childrenReducer";
 // import engagementReducer from "./engagementReducer";
@@ -11,7 +12,8 @@ import peopleReducer from "./getPeopleReducer";
 // import eventReducer from "./eventReducer";
 
 const rootReducer = combineReducers({
-  peopleReducer
+  peopleReducer,
+  profileReducer
   //   signUpReducer,
   //   signInReducer,
   //   bumpReducer,
